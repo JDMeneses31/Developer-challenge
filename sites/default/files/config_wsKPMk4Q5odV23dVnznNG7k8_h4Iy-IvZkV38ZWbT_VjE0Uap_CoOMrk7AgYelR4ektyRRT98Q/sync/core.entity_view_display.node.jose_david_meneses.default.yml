@@ -1,0 +1,28 @@
+uuid: ea1958b7-a67d-40da-b8e3-24992ddd97b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jose_david_meneses.body
+    - node.type.jose_david_meneses
+  module:
+    - text
+    - user
+id: node.jose_david_meneses.default
+targetEntityType: node
+bundle: jose_david_meneses
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

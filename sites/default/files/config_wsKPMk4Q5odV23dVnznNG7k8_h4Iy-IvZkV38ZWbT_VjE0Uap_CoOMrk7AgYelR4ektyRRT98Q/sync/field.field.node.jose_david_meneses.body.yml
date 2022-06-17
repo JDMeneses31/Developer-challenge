@@ -1,0 +1,23 @@
+uuid: 89d2d25b-97e5-4528-875b-0cb56104e0bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jose_david_meneses
+  module:
+    - text
+id: node.jose_david_meneses.body
+field_name: body
+entity_type: node
+bundle: jose_david_meneses
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

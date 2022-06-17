@@ -1,0 +1,30 @@
+uuid: c85ece0f-4da2-4902-83f0-e47a78c14d99
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.new_form_example_
+  module:
+    - system
+    - webform
+  theme:
+    - olivero
+id: webform_2
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform Kodffe Quito '
+  label_display: visible
+  provider: webform
+  webform_id: new_form_example_
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

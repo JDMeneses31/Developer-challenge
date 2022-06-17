@@ -1,0 +1,23 @@
+uuid: 23c51216-3bf9-4c48-b68c-577d5dd92e72
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - danland
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: danland_search_form_wide
+theme: danland
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: e46571ac-ffd8-445b-aaac-5cc7bef3c309
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jose_david_meneses.body
+    - node.type.jose_david_meneses
+  module:
+    - text
+    - user
+id: node.jose_david_meneses.teaser
+targetEntityType: node
+bundle: jose_david_meneses
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

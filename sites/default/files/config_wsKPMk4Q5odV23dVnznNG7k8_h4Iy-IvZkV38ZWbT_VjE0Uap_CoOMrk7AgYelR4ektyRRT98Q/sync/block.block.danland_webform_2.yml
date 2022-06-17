@@ -1,0 +1,30 @@
+uuid: 1d2da31f-0bca-4e8f-ae86-55638e9b2bf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.new_form_example_
+  module:
+    - system
+    - webform
+  theme:
+    - danland
+id: danland_webform_2
+theme: danland
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform Kodffe Quito '
+  label_display: visible
+  provider: webform
+  webform_id: new_form_example_
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

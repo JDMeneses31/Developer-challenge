@@ -1,0 +1,32 @@
+uuid: 446eb982-ab90-4e64-8427-2cb04b003525
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - danland
+id: danland_pagetitle_2
+theme: danland
+region: header
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front> '
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
